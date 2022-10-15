@@ -184,7 +184,6 @@ header > div > h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 
-  width: auto;
   height: 100vh;
   position: fixed;
   z-index: -101;
@@ -413,7 +412,6 @@ main {
   display: flex;
   flex-direction: column;
 
-  width: 50px;
   padding: 10px 0;
 }
 
@@ -491,7 +489,6 @@ main {
   align-items: center;
   flex-direction: column;
   
-  width: 100vh;
   margin: 20px;
   background-color: #23292F;
   
@@ -519,8 +516,6 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  width: 100%;
 }
 
 footer {
@@ -551,6 +546,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+}
+
+#contactform > div > .icons > div {
+margin: 10px;
 }
 
 @media all and (max-width: 767px) {
@@ -670,7 +669,6 @@ footer {
 
     margin: 0px;
     padding: 0px;
-    width: 100%;
     height: auto;
   }
 
@@ -707,7 +705,6 @@ footer {
     background-color: #23292F;
     padding: 0px;
     margin: 0px;
-    width: 100%;
     border-bottom: #2C333A 2px solid;
   }
 
@@ -743,7 +740,6 @@ footer {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
 
-    width: 100%;
     margin: 0px;
   }
 
@@ -784,7 +780,6 @@ footer {
     margin: 0px;
     border-left: none;
     text-align: center;
-    width: 100%;
 
     border-bottom: #2C333A 2px solid;
   }
@@ -802,9 +797,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    width: 100vh;
     padding: 0px;
-    width: 100%;
     font-size: 15px;
   }
 
@@ -815,8 +808,8 @@ footer {
 
     margin: 0px;
     padding: 0px;
-    width: 100%;
     margin-top: 50px;
+    width: 100%;
   }
 
   .education > div > h3 {
@@ -835,8 +828,7 @@ footer {
     padding-bottom: 15px;
     margin: 0px;
     border-left: none;
-    text-align: start;
-    width: 100%;
+    text-align: center;
     border-bottom: #2C333A 2px solid;
     border-left: none;
   }
@@ -849,9 +841,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    width: 100vh;
     padding: 0px;
-    width: 100%;
     font-size: 15px;
   }
 
@@ -882,8 +872,6 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
-    width: 100%;
 
   }
 
