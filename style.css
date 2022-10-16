@@ -362,7 +362,7 @@ header {
     opacity: 1;
   }
 }
-main {
+#maincontent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr;
@@ -590,7 +590,7 @@ footer {
   .menu-bar.active {
     top: 100px;
   }
-  main {
+  #maincontent {
     grid-row: 3/4;
     grid-column: 1/2;
     display: flex;
@@ -696,7 +696,7 @@ footer {
   .text > p {
     margin: 10px;
   }
-  #maincontent {
+  #resume {
     grid-column: 1/2;
     grid-row: 4/5;
     margin: 0px;
