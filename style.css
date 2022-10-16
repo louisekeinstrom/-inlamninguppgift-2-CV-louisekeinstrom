@@ -11,10 +11,22 @@ body {
 }
 
 h1 {
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  width: 25%;
+  transition: all 0.3s ease-in-out;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   color: #fff;
   cursor: default;
+}
+
+h1:hover {
+  text-shadow: 0em 0em 0.25em #fff;
 }
 
 h2 {
@@ -65,21 +77,6 @@ ul {
   height: 100px;
   z-index: 100;
   background-image: linear-gradient(rgba(35, 41, 47, 0.507), rgba(35, 41, 47, 0.4));
-}
-
-h1 {
-  flex-wrap: wrap;
-  flex-direction: column;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-  width: 25%;
-  transition: all 0.3s ease-in-out;
-}
-
-h1:hover {
-  text-shadow: 0em 0em 0.25em #fff;
 }
 
 .menu-bar {
@@ -134,29 +131,6 @@ header {
   justify-content: flex-start;
   height: 100vh;
   z-index: -150;
-}
-
-.headertext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: fixed;
-  text-shadow: #23292F 0em 0em 0.5em, #23292F 0em 0em 1em, #23292F 0em 0em 2em, #23292F 0em 0em 3em, #23292F 0em 0em 4em;
-  width: 100%;
-  height: 70vh;
-  z-index: -100;
-}
-
-.headertext > h2 {
-  display: flex;
-  align-items: center;
-  color: #94b0da;
-}
-
-.headertext > h3 {
-  color: #94b0da;
 }
 
 .passions {
@@ -409,16 +383,16 @@ main {
   background-color: #23292F;
 }
 
-.aboutmetext {
-  margin: 0px 20px 50px 0px;
-}
-
 .sidebar > div > div > ul {
   list-style: none;
 }
 
 .sidebar > div > div > ul > li {
   padding: 10px 0px;
+}
+
+.aboutmetext {
+  margin: 0px 20px 50px 0px;
 }
 
 .icons {
@@ -428,7 +402,7 @@ main {
   flex: 5;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 200px;
+  height: 300px;
   margin: 30px 0px;
   padding: 20px;
   -webkit-filter: invert(100%);
@@ -463,8 +437,6 @@ main {
 }
 
 .occupationheading {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -474,8 +446,6 @@ main {
 }
 
 .dates {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
   font-size: 0.8rem;
 }
 
@@ -497,7 +467,7 @@ main {
 }
 
 .education > div > div > ul {
-  list-style: inside square;
+  list-style: none;
 }
 
 .work {
@@ -506,10 +476,6 @@ main {
   flex-direction: column;
   margin: 20px;
   background-color: #23292F;
-}
-
-.work > div > div > ul {
-  list-style: square inside;
 }
 
 .work > div > div {
@@ -521,6 +487,10 @@ main {
   border-left: 4px solid #2C333A;
 }
 
+.work > div > div > ul {
+  list-style: none;
+}
+
 footer {
   grid-column: 1/5;
   grid-row: 4/5;
@@ -528,10 +498,15 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-family: "Montserrat", sans-serif;
-  color: #dcedff;
   background-color: #23292F;
   padding-top: 50px;
+}
+
+#contactform > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #contactform > div > h3 {
@@ -624,31 +599,12 @@ footer {
     height: auto;
   }
   header {
-    grid-column: 1/5;
-    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-row: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .headertext {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px;
-    margin-bottom: 70px;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  .headertext > h2 {
-    display: flex;
-    color: #94b0da;
-    font-size: 2rem;
-  }
-  .headertext > h3 {
-    font-size: 3rem;
   }
   .sidebar {
     grid-column: 1/2;
@@ -678,9 +634,6 @@ footer {
     padding: 0px;
     margin: 50px 0px;
   }
-  .sidebar > div > div > ul {
-    margin: 0px;
-  }
   .sidebar > div > .icons {
     display: none;
   }
@@ -689,7 +642,6 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0px;
-    padding: 0px;
     text-align: center;
     padding: 10px 0px;
   }
@@ -760,7 +712,6 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px;
     margin: 30px 0px;
     padding: 0px;
     width: 100%;
@@ -777,6 +728,8 @@ footer {
   .work > div > h3 {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
   .work > div > div {
@@ -799,9 +752,10 @@ footer {
   .work > div > div > ul > li {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
     font-size: 1rem;
-    align-items: center;
   }
   .education {
     display: flex;
@@ -830,6 +784,8 @@ footer {
   .education > div > div > ul > li {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   footer {
