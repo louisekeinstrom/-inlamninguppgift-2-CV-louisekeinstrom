@@ -135,7 +135,7 @@ header {
 
 .passions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100vh;
