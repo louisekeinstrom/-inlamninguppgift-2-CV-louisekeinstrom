@@ -1,5 +1,9 @@
-#body {
+* {
+  padding: 0px;
   margin: 0px;
+}
+
+body {
   background-color: #23292F;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -8,21 +12,22 @@
 
 h1 {
   font-size: 2rem;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   cursor: default;
 }
 
 h2 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
   color: #94b0da;
   cursor: default;
 }
 
 h3 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #94b0da;
-  font-size: 30px;
+  font-size: 4rem;
   cursor: default;
 }
 
@@ -30,6 +35,7 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   cursor: default;
+  font-size: 1rem;
 }
 
 a {
@@ -53,12 +59,10 @@ ul {
   flex-direction: row;
   padding-left: 50px;
   padding-right: 50px;
-  margin: 0px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 100px;
-  margin: 0px;
   z-index: 100;
   background-image: linear-gradient(rgba(35, 41, 47, 0.507), rgba(35, 41, 47, 0.4));
 }
@@ -71,7 +75,6 @@ h1 {
   align-items: center;
   text-decoration: none;
   width: 25%;
-  margin: 0px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -100,7 +103,6 @@ h1:hover {
   justify-content: space-evenly;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0px;
 }
 
 .menu-link > a:hover {
@@ -131,7 +133,6 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
   height: 100vh;
-  margin: 0px;
   z-index: -150;
 }
 
@@ -143,7 +144,6 @@ header {
   text-align: center;
   position: fixed;
   text-shadow: #23292F 0em 0em 0.5em, #23292F 0em 0em 1em, #23292F 0em 0em 2em, #23292F 0em 0em 3em, #23292F 0em 0em 4em;
-  margin: 0px;
   width: 100%;
   height: 70vh;
   z-index: -100;
@@ -152,12 +152,11 @@ header {
 .headertext > h2 {
   display: flex;
   align-items: center;
+  color: #94b0da;
 }
 
-header > div > h3 {
-  font-size: 60px;
-  color: #fff;
-  margin: 0px;
+.headertext > h3 {
+  color: #94b0da;
 }
 
 .passions {
@@ -184,7 +183,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
-  font-size: 24px;
+  font-size: 3.5rem;
   margin: 20px;
 }
 
@@ -199,8 +198,23 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin: 25px;
+}
+
+.webdesign {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  text-shadow: #fff 0em 0em 1em;
+  -webkit-animation: fadeIn alternate infinite;
+          animation: fadeIn alternate infinite;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  font-size: 3rem;
+  margin: 20px;
 }
 
 .formula1 {
@@ -214,7 +228,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .writing {
@@ -228,7 +242,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
-  font-size: 22px;
+  font-size: 3rem;
 }
 
 .netflix {
@@ -242,7 +256,21 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 9s;
           animation-duration: 9s;
-  font-size: 10px;
+  font-size: 0.8rem;
+}
+
+.html {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 10px;
+  flex-wrap: wrap;
+  text-shadow: #fff 0em 0em 1em;
+  -webkit-animation: fadeIn alternate infinite;
+          animation: fadeIn alternate infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  font-size: 2rem;
 }
 
 .opera {
@@ -256,7 +284,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 12s;
           animation-duration: 12s;
-  font-size: 16px;
+  font-size: 2rem;
 }
 
 .friends {
@@ -270,21 +298,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
-  font-size: 25px;
-}
-
-.painting {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-  flex-wrap: wrap;
-  text-shadow: #fff 0em 0em 1em;
-  -webkit-animation: fadeIn alternate infinite;
-          animation: fadeIn alternate infinite;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  font-size: 22px;
+  font-size: 2.5rem;
 }
 
 .travel {
@@ -298,7 +312,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 17s;
           animation-duration: 17s;
-  font-size: 18px;
+  font-size: 3rem;
 }
 
 .learning {
@@ -312,7 +326,21 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
-  font-size: 14px;
+  font-size: 1.5rem;
+}
+
+.css {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 10px;
+  flex-wrap: wrap;
+  text-shadow: #fff 0em 0em 1em;
+  -webkit-animation: fadeIn alternate infinite;
+          animation: fadeIn alternate infinite;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  font-size: 2rem;
 }
 
 .litterature {
@@ -326,7 +354,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 22s;
           animation-duration: 22s;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .plants {
@@ -340,7 +368,7 @@ header > div > h3 {
           animation: fadeIn alternate infinite;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  font-size: 12px;
+  font-size: 0.5rem;
 }
 
 @-webkit-keyframes fadeIn {
@@ -364,7 +392,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr;
-  margin: 0px;
+  padding-top: 80px;
   background-color: #23292F;
   border-top: #2C333A 3px solid;
 }
@@ -376,16 +404,17 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin: 0px;
   margin-top: 20px;
   padding-left: 60px;
   background-color: #23292F;
 }
 
+.aboutmetext {
+  margin: 0px 20px 50px 0px;
+}
+
 .sidebar > div > div > ul {
-  padding: 0px;
   list-style: none;
-  font-size: 20px;
 }
 
 .sidebar > div > div > ul > li {
@@ -400,6 +429,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   height: 200px;
+  margin: 30px 0px;
   padding: 20px;
   -webkit-filter: invert(100%);
 }
@@ -427,7 +457,6 @@ main {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
-  margin: 0px;
   margin-left: 20px;
   gap: 0;
   background-color: #23292F;
@@ -436,9 +465,7 @@ main {
 .occupationheading {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  margin: 0px;
-  padding: 0px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .occupationheading:hover {
@@ -449,9 +476,7 @@ main {
 .dates {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
+  font-size: 0.8rem;
 }
 
 .education {
@@ -472,7 +497,7 @@ main {
 }
 
 .education > div > div > ul {
-  list-style: square;
+  list-style: inside square;
 }
 
 .work {
@@ -484,8 +509,6 @@ main {
 }
 
 .work > div > div > ul {
-  padding: 0px;
-  margin: 0px;
   list-style: square inside;
 }
 
@@ -498,13 +521,6 @@ main {
   border-left: 4px solid #2C333A;
 }
 
-.other {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 footer {
   grid-column: 1/5;
   grid-row: 4/5;
@@ -514,8 +530,8 @@ footer {
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
   color: #dcedff;
-  margin: 0px;
   background-color: #23292F;
+  padding-top: 50px;
 }
 
 #contactform > div > h3 {
@@ -536,37 +552,14 @@ footer {
   margin: 10px;
 }
 
-@media all and (max-width: 767px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
+@media all and (max-width: 1024px) {
   #body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100vh 1fr 0.1fr;
   }
-  header {
-    grid-row: 1/3;
-    grid-column: 1/2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  main {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: auto;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: auto;
-    padding-top: 50px;
+  h3 {
+    font-size: 3rem;
   }
   .menu {
     display: flex;
@@ -580,6 +573,7 @@ footer {
     padding: 0px;
     background-color: #23292F;
     z-index: 100;
+    overflow: clip;
   }
   .menu > h1 {
     display: flex;
@@ -621,6 +615,14 @@ footer {
   .menu-bar.active {
     top: 100px;
   }
+  main {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+  }
   header {
     grid-column: 1/5;
     grid-row: 2/3;
@@ -628,25 +630,25 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    height: auto;
-  }
-  header > div > h2 {
-    display: flex;
-    font-size: 20px;
-    color: #94b0da;
   }
   .headertext {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px;
+    margin: 10px;
     margin-bottom: 70px;
     padding: 0px;
     width: 100%;
     text-align: center;
+  }
+  .headertext > h2 {
+    display: flex;
+    color: #94b0da;
+    font-size: 2rem;
+  }
+  .headertext > h3 {
+    font-size: 3rem;
   }
   .sidebar {
     grid-column: 1/2;
@@ -660,6 +662,13 @@ footer {
     padding: 0px;
     margin: 0px;
     border-bottom: #2C333A 2px solid;
+  }
+  .aboutmetext > h3 {
+    text-align: center;
+  }
+  .aboutmetext > p {
+    margin: 0px 50px;
+    text-align: center;
   }
   .sidebar > div > div {
     display: flex;
@@ -675,110 +684,6 @@ footer {
   .sidebar > div > .icons {
     display: none;
   }
-  .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .text > p {
-    margin: 10px;
-  }
-  #maincontent {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    margin: 0px;
-  }
-  .work {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0px;
-    margin-top: 50px;
-    padding: 0px;
-    width: 100%;
-  }
-  .work > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px;
-  }
-  .work > div > h3 {
-    padding: 0px;
-    text-align: center;
-  }
-  .work > div > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    padding-bottom: 15px;
-    margin: 0px;
-    border-left: none;
-    text-align: center;
-    border-bottom: #2C333A 2px solid;
-  }
-  .work > div > div > p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0px;
-  }
-  .work > div > div > ul > li {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-    font-size: 15px;
-  }
-  .education {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 50px;
-    width: 100%;
-  }
-  .education > div > h3 {
-    padding-left: 20px;
-    text-align: center;
-    padding: 0px;
-  }
-  .education > div > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    padding-bottom: 15px;
-    margin: 0px;
-    border-left: none;
-    text-align: center;
-    border-bottom: #2C333A 2px solid;
-    border-left: none;
-  }
-  .education > div > div > ul {
-    text-align: center;
-  }
-  .education > div > div > ul > li {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-    font-size: 15px;
-  }
-  .occupationheading {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-  }
   .dates {
     display: flex;
     align-items: center;
@@ -787,12 +692,6 @@ footer {
     padding: 0px;
     text-align: center;
     padding: 10px 0px;
-  }
-  .other {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
   .languages {
     display: flex;
@@ -836,6 +735,110 @@ footer {
     margin: 0px;
     padding: 0px;
     list-style: none;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text > p {
+    margin: 10px;
+  }
+  #maincontent {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 0px;
+  }
+  .occupationheading {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .work {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    margin: 30px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .work > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+  }
+  .work > div > h3 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .work > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    text-align: center;
+    margin: 10px;
+    border-bottom: #2C333A 2px solid;
+  }
+  .work > div > div > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+  }
+  .work > div > div > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    font-size: 1rem;
+    align-items: center;
+  }
+  .education {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .education > div > h3 {
+    text-align: center;
+  }
+  .education > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    text-align: center;
+    border-bottom: #2C333A 2px solid;
+    border-left: none;
+  }
+  .education > div > div > ul {
+    text-align: center;
+  }
+  .education > div > div > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
   }
   .icons {
     display: flex;
