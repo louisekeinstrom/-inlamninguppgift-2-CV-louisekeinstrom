@@ -866,6 +866,32 @@ margin: 10px;
     text-align: center;
   }
 
+  .other{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .other > div > h3 {
+    text-align: center;
+  }
+
+  .other > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-left: none;
+    text-align: center;
+    border-bottom: #2C333A 2px solid;
+    border-left: none;
+  }
+
   footer {
     display: flex;
     flex-wrap: wrap;
