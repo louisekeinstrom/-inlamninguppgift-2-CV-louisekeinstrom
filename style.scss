@@ -890,12 +890,28 @@ margin: 10px;
     justify-content: flex-start;
     align-items: center;
 
+    margin: 30px 0px;
     padding: 0px;
-    margin-top: 50px;
+    width: 100%;
+  }
+
+  .other > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    margin: 20px;
     width: 100%;
   }
 
   .other > div > h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
     text-align: center;
   }
 
@@ -907,8 +923,9 @@ margin: 10px;
 
     border-left: none;
     text-align: center;
+    margin: 10px;
+
     border-bottom: #2C333A 2px solid;
-    border-left: none;
   }
 
   .other > div > div > p {
