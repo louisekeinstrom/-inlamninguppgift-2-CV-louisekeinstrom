@@ -114,7 +114,8 @@ ul {
   text-decoration: none;
   color: #fff;
   transform: scale(1.1);
-  text-shadow: #fff 0em 0em 0.25em;
+  text-shadow: #fff 0em 
+  0em 0.25em;
 }
 
 .hamburger {
@@ -493,6 +494,29 @@ header {
 .work > div > div > ul {
   list-style: none;
   
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 30px;
+}
+
+.other > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  margin: 20px;
+  padding: 40px;
+  border-left: 4px solid #2C333A;
+}
+
+.other > div > div > ul{
+  list-style: none;
 }
 
 footer {
@@ -902,7 +926,7 @@ margin: 10px;
   }
   
   .otherHeading:hover {
-    text-shadow: 0em 0em 0.25em #fff;
+    text-shadow: #fff 0em 0em 0.25em;
     cursor: default;
   }
 
