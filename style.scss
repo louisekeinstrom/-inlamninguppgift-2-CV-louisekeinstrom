@@ -498,18 +498,18 @@ header {
 
 .other {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   
-  padding: 30px;
+  margin: 20px;
+  background-color: #23292F;
 }
 
 .other > div > div {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  
+  flex-direction: column;
+
   margin: 20px;
   padding: 40px;
   border-left: 4px solid #2C333A;
