@@ -496,25 +496,6 @@ header {
   
 }
 
-.other {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  
-  margin: 20px;
-  background-color: #23292F;
-}
-
-.other > div > div {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-
-  margin: 20px;
-  padding: 40px;
-  border-left: 4px solid #2C333A;
-}
-
 footer {
   grid-column: 1 / 5;
   grid-row: 4 / 5;
@@ -883,58 +864,6 @@ margin: 10px;
     align-items: center;
 
     text-align: center;
-  }
-
-  .other {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin: 30px 0px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .other > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    text-align: center;
-    margin: 20px;
-    width: 100%;
-  }
-
-  .other > div > h3 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-    text-align: center;
-  }
-
-  .other > div > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    border-left: none;
-    text-align: center;
-    margin: 10px;
-
-    border-bottom: #2C333A 2px solid;
-  }
-
-  .other > div > div > p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    padding: 0px;
   }
 
   footer {
